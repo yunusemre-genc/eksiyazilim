@@ -1,0 +1,444 @@
+/* ========================================
+   EKŞİ YAZILIM - ANA CSS DOSYASI
+   Tüm stiller bu dosyada birleştirildi
+   ======================================== */
+
+/* ========================================
+   GENEL STİLLER
+   ======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* ========================================
+   HEADER STİLLERİ
+   ======================================== */
+
+header {
+    background: #222;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+nav {
+    margin-top: 1rem;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #00c6ff;
+}
+
+/* ========================================
+   ANA İÇERİK STİLLERİ
+   ======================================== */
+
+main {
+    padding: 2rem;
+    text-align: center;
+    min-height: calc(100vh - 200px);
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* ========================================
+   POST STİLLERİ
+   ======================================== */
+
+.post {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+.post:hover {
+    transform: translateY(-2px);
+}
+
+.post h3 {
+    margin-top: 0;
+    color: #0066cc;
+    margin-bottom: 10px;
+}
+
+.post small {
+    color: #777;
+    display: block;
+    margin: 5px 0;
+}
+
+.post p {
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.actions {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.actions a {
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: opacity 0.3s;
+}
+
+.actions a:hover {
+    opacity: 0.8;
+}
+
+.delete {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.edit {
+    background-color: #3498db;
+    color: white;
+}
+
+.copy {
+    background-color: #f39c12;
+    color: white;
+}
+
+.add-new {
+    background: #2ecc71;
+    color: white;
+    font-weight: bold;
+}
+
+/* ========================================
+   FORM STİLLERİ
+   ======================================== */
+
+.form-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+/* ========================================
+   BUTTON STİLLERİ
+   ======================================== */
+
+.btn {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    transform: translateY(-1px);
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-success {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* ========================================
+   MESAJ STİLLERİ
+   ======================================== */
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ========================================
+   LOGIN/REGISTER STİLLERİ
+   ======================================== */
+
+.login-container {
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(5px);
+}
+
+.login-form h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form input[type="email"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.login-form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.login-form button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    background-color: #00c6ff;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #0072ff;
+}
+
+.login-form a {
+    color: #00c6ff;
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    text-decoration: none;
+}
+
+/* ========================================
+   DASHBOARD STİLLERİ
+   ======================================== */
+
+.stats-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.stats-container h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.stats-container p {
+    margin: 8px 0;
+    color: #666;
+}
+
+/* ========================================
+   TRIGGER TEST STİLLERİ
+   ======================================== */
+
+.original-post-info {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #3498db;
+}
+
+.original-post-info h4 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* ========================================
+   FOOTER STİLLERİ
+   ======================================== */
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* ========================================
+   UTILITY STİLLERİ
+   ======================================== */
+
+.username {
+    color: rgb(21, 0, 128);
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+/* ========================================
+   RESPONSIVE TASARIM
+   ======================================== */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        margin: 15px auto;
+    }
+
+    .form-container {
+        padding: 20px;
+        margin: 15px auto;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    .actions a {
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 1rem;
+    }
+
+    .post {
+        padding: 15px;
+    }
+
+    .btn {
+        padding: 10px 16px;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+}
